@@ -7,7 +7,11 @@ import { SpotifyService } from '../../services/spotify.service'
   styles: []
 })
 export class HomeComponent {
+  newSongs = []
   constructor(private spotify: SpotifyService) {
-    this.spotify.getNewReleases()
+    this.spotify.getNewReleases().subscribe((data: any) => {
+      console.log(data.albums.items)
+      this.newSongs = data.albums.items
+    })
   }
 }
