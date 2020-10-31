@@ -1,16 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-artist',
   templateUrl: './artist.component.html',
-  styles: [
-  ]
+  styles: []
 })
-export class ArtistComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class ArtistComponent {}
