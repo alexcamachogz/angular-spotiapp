@@ -12,7 +12,7 @@ export class SearchComponent {
   search(term: string): void {
     console.log(term)
     this.spotify.getArtist(term).subscribe((data) => {
-      this.artists = data.artists.items
+      this.artists = data
     })
   }
 }
