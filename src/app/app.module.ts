@@ -16,13 +16,17 @@ import { ROUTES } from './app.routes'
 // Services
 import { SpotifyService } from './services/spotify.service'
 
+// Pipes
+import { NoimagePipe } from './pipes/noimage.pipe'
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SearchComponent,
     ArtistComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagePipe
   ],
   imports: [
     BrowserModule,
