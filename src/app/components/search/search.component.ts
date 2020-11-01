@@ -12,7 +12,7 @@ export class SearchComponent {
   constructor(private spotify: SpotifyService) {}
   search(term: string): void {
     this.loading = true
-    this.spotify.getArtist(term).subscribe((data) => {
+    this.spotify.getArtists(term).subscribe((data) => {
       this.artists = data
       this.loading = false
     })
